@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>AI ROBOT SYSTEM V80</title>
+
+<link href="http://10.10.20.250/ROBOT/ROBOTV80.png" rel="icon" type="image/png"/>
+
+<!-- ICON -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#1e3c72,#2a5298);
+min-height:100vh;
+}
+
+/* HEADER */
+
+.header{
+color:white;
+padding:25px;
+}
+
+.balance{
+font-size:22px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.menu-top{
+display:flex;
+justify-content:space-around;
+}
+
+.menu-top .item{
+text-align:center;
+}
+
+.menu-top i{
+font-size:22px;
+background:white;
+color:#2a5298;
+padding:12px;
+border-radius:12px;
+margin-bottom:6px;
+}
+
+/* CARD MENU */
+
+.card{
+background:white;
+margin:15px;
+border-radius:18px;
+padding:18px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+text-align:center;
+}
+
+.menu-grid .item i{
+font-size:22px;
+color:#2a5298;
+margin-bottom:5px;
+}
+
+/* BANNER */
+
+.banner{
+margin:15px;
+padding:20px;
+border-radius:15px;
+background:linear-gradient(90deg,#ff9966,#ff5e62);
+color:white;
+text-align:center;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ACTIVITY */
+
+.activity{
+background:white;
+margin:15px;
+border-radius:15px;
+padding:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.activity-item{
+display:flex;
+justify-content:space-between;
+padding:10px 0;
+border-bottom:1px solid #eee;
+font-size:14px;
+}
+
+/* PROMO */
+
+.promo{
+margin:15px;
+padding:20px;
+border-radius:15px;
+background:linear-gradient(90deg,#00c6ff,#0072ff);
+color:white;
+text-align:center;
+font-weight:bold;
+}
+
+/* BOTTOM NAV */
+
+.bottom-nav{
+position:fixed;
+bottom:0;
+width:100%;
+background:white;
+display:flex;
+justify-content:space-around;
+align-items:center;
+padding:10px 0;
+border-top:1px solid #ddd;
+}
+
+.bottom-nav .item{
+text-align:center;
+font-size:12px;
+color:#333;
+}
+
+.bottom-nav i{
+font-size:18px;
+}
+
+.pay{
+background:#2a5298;
+color:white;
+padding:15px;
+border-radius:50%;
+margin-top:-25px;
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+.menu-top a{
+text-decoration:none;
+color:#ffffff;   /* warna tulisan putih */
+text-align:center;
+}
+
+.menu-top .item{
+display:flex;
+flex-direction:column;
+align-items:center;
+color:white;
+}
+
+.menu-top i{
+font-size:22px;
+background:white;
+color:#2a5298;
+padding:12px;
+border-radius:12px;
+margin-bottom:6px;
+}
+.menu-grid a{
+text-decoration:none;
+color:#333;
+text-align:center;
+}
+
+.menu-grid .item{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.jadwal-sholat{
+margin:15px;
+padding:20px;
+border-radius:15px;
+background:linear-gradient(135deg,#0f9b0f,#38ef7d);
+color:white;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.jadwal-sholat h3{
+text-align:center;
+margin-bottom:15px;
+}
+
+.sholat-item{
+display:flex;
+justify-content:space-between;
+padding:8px 0;
+border-bottom:1px solid rgba(255,255,255,0.3);
+font-size:15px;
+}
+
+.info-sholat{
+margin-top:12px;
+font-size:13px;
+text-align:center;
+}
+.radio-player{
+margin:15px;
+padding:20px;
+border-radius:15px;
+background:linear-gradient(135deg,#ff512f,#dd2476);
+color:white;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.radio-player audio{
+width:100%;
+margin-top:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+
+<div class="balance">
+Robot V80
+</div>
+
+<div class="menu-top">
+
+<a href="https://my.jdn-info.com/login" class="item">
+<i class="fa-solid fa-plus"></i>
+<div>JDN</div>
+</a>
+
+<a href="http://10.10.20.1/" class="item">
+<i class="fa-solid fa-signal"></i>
+<div>MIKROTIK</div>
+</a>
+
+<a href="https://coretaxdjp.pajak.go.id/identityproviderportal/account/login" class="item">
+<i class="fa-solid fa-paper-plane"></i>
+<div>PAJAK</div>
+</a>
+
+<a href="https://cekbansos.kemensos.go.id/" class="item">
+<i class="fa-solid fa-paper-plane"></i>
+<div>BANSOS</div>
+</a>
+
+</div>
+
+</div>
+</div>
+
+<div class="banner">
+🎁 Cek Laporan & Tagihan Transaksi
+</div>
+
+
+<div class="card">
+
+<div class="menu-grid">
+
+<a href="https://pupukbersubsidi.pertanian.go.id/ceksubsidi/search" class="item">
+<i class="fa-solid fa-paper-plane"></i>
+<div>PUPUK</div>
+</a>
+
+<a href="https://cekresi.com/" class="item">
+<i class="fa-solid fa-paper-plane"></i>
+<div>RESI</div>
+</a>
+
+<a href="https://member.speedcash.co.id/" class="item">
+<i class="fa-solid fa-paper-plane"></i>
+<div>TAGIHAN</div>
+</a>
+
+<a href="https://www.nperf.com/id/" class="item">
+<i class="fa-solid fa-signal"></i>
+<div>SPEED</div>
+</a>
+
+
+
+
+
+<a href="https://myaccount.google.com/find-your-phone?pli=1" class="item">
+<i class="fa-solid fa-paper-plane"></i>
+<div>LACAK</div>
+</a>
+
+<a href="https://play.google.com/store/apps/details?id=com.shop.mova&pcampaignid=web_share" class="item">
+<i class="fa-solid fa-paper-plane"></i>
+<div>MOVA</div>
+</a>
+
+<a href="https://play.google.com/store/apps/details?id=com.apps.MyXL" class="item">
+<i class="fa-solid fa-paper-plane"></i>
+<div>XL</div>
+</a>
+
+<a href="https://play.google.com/store/apps/details?id=com.telkomsel.telkomselcm" class="item">
+<i class="fa-solid fa-paper-plane"></i>
+<div>TELKOM</div>
+</a>
+
+
+
+
+<a href="https://play.google.com/store/apps/details?id=com.alfamart.alfagift" class="item">
+<i class="fa-solid fa-paper-plane"></i>
+<div>ALFA</div>
+</a>
+
+<a href="https://play.google.com/store/apps/details?id=com.indomaret.klikindomaret" class="item">
+<i class="fa-solid fa-paper-plane"></i>
+<div>INDO</div>
+</a>
+
+<a href="https://www.radioindonesia.org/#google_vignette" class="item">
+<i class="fa-solid fa-paper-plane"></i>
+<div>RADIO</div>
+</a>
+
+<a href="https://play.google.com/store/apps/details?id=com.canva.editor" class="item">
+<i class="fa-solid fa-paper-plane"></i>
+<div>CANVA</div>
+</a>
+
+
+
+
+
+
+
+
+<a href="https://u.pcloud.link/publink/show?code=kZVKNd5ZTxLBSnaLbjpLvuuEh1wyXyFywQTy" class="item">
+<i class="fa-solid fa-music"></i>
+<div>AUDIO</div>
+</a>
+
+<a href="https://pcarejkn.bpjs-kesehatan.go.id/eclaim/Login" class="item">
+<i class="fa-solid fa-paper-plane"></i>
+<div>BPJS</div>
+</a>
+
+<a href="https://webskrining.bpjs-kesehatan.go.id/skrining" class="item">
+<i class="fa-solid fa-paper-plane"></i>
+<div>BPJS 2</div>
+</a>
+
+<a href="https://klinikasura.github.io/APLIKASI-V80/" class="item">
+<i class="fa-solid fa-ellipsis"></i>
+<div>Lihat Semua</div>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="activity">
+
+<div class="activity-item">
+<div id="id1ac0ae5fba18c" a='{"t":"r","v":"1.2","lang":"id","locs":[449],"ssot":"c","sics":"ds","cbkg":"rgb(69,90,100)","cfnt":"#FFFFFF","codd":"rgb(84,110,122)","cont":"#E0E0E0","eln":"bool"}'>Sumber Data Cuaca: <a href="https://cuacalab.id/cuaca_palembang/">cuaca Palembang</a></div><script async src="https://static1.cuacalab.id/widgetjs/?id=id1ac0ae5fba18c"></script><center>
+</div></span><center><div id="id20c7e101ad87f" a='{"t":"v","v":"1.2","lang":"id","locs":[449],"ssot":"c","sics":"ds","cbkg":"rgb(158,158,158)","cfnt":"#FFFFFF","cprb":"rgb(97,97,97)","cprf":"#FFFFFF","emr":"bool","edy":"bool","eev":"bool","ent":"bool","slfs":"22","slbr":"8","eln":"bool","ewi":"bool","etp":"bool"}'>Sumber Data Cuaca: <a href="https://cuacalab.id/cuaca_palembang/">cuaca Palembang</a></div><script async src="https://static1.cuacalab.id/widgetjs/?id=id20c7e101ad87f"></script>
+<span></span>
+</div>
+
+<div class="activity-item"><center>
+<span><center><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7969.164473495992!2d104.7304853991953!3d-2.9357012874224204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smasjid%20terdekat!5e0!3m2!1sid!2sid!4v1773029460206!5m2!1sid!2sid" width="340" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></span>
+<span></span>
+</div>
+
+<div class="activity-item">
+<span><iframe width="340" height="250" src="https://www.youtube.com/embed/DOOrIxw5xOw?si=aLwbDZs9sq6WF5Jb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></span>
+<span></span>
+</div>
+
+<div class="radio-player">
+
+<h3>📻 Radio Online</h3>
+
+<audio controls autoplay>
+<source src="https://stream.zeno.fm/0r0xa792kwzuv" type="audio/mpeg">
+Browser kamu tidak mendukung audio.
+</audio>
+
+</div>
+
+</div>
+
+<div class="promo">
+<div class="jadwal-sholat">
+
+<h8>🕌 Jadwal Sholat Hari Ini</h8>
+
+<div id="imsak" class="sholat-item"></div>
+<div id="subuh" class="sholat-item"></div>
+<div id="dzuhur" class="sholat-item"></div>
+<div id="ashar" class="sholat-item"></div>
+<div id="maghrib" class="sholat-item"></div>
+<div id="isya" class="sholat-item"></div>
+
+<div class="info-sholat">
+📖 Jangan tinggalkan sholat karena sholat adalah tiang agama
+</div>
+
+</div>
+
+<script>
+
+fetch("https://api.aladhan.com/v1/timingsByCity?city=Oki&country=Indonesia&method=11")
+.then(res => res.json())
+.then(data => {
+
+let t = data.data.timings;
+
+document.getElementById("imsak").innerHTML =
+"<span>Imsak</span><span>"+t.Imsak+"</span>";
+
+document.getElementById("subuh").innerHTML =
+"<span>Subuh</span><span>"+t.Fajr+"</span>";
+
+document.getElementById("dzuhur").innerHTML =
+"<span>Dzuhur</span><span>"+t.Dhuhr+"</span>";
+
+document.getElementById("ashar").innerHTML =
+"<span>Ashar</span><span>"+t.Asr+"</span>";
+
+document.getElementById("maghrib").innerHTML =
+"<span>Maghrib</span><span>"+t.Maghrib+"</span>";
+
+document.getElementById("isya").innerHTML =
+"<span>Isya</span><span>"+t.Isha+"</span>";
+
+});
+
+</script>
+
+
+
+
+
+</div>
+</div>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+
+<div class="bottom-nav">
+
+<a href="index.html" class="item">
+<i class="fa-solid fa-house"></i>
+<div>Beranda</div>
+</a>
+
+<a href="https://quran.com/id" class="item">
+<i class="fa-solid fa-clock-rotate-left"></i>
+<div>Al Qur'an</div>
+</a>
+
+<a href="https://scanqr.org/" class="pay">
+<i class="fa-solid fa-qrcode"></i>
+<div></div>
+</a>
+
+<a href="https://lk21.de/" class="item">
+<i class="fa-solid fa-film"></i>
+<div>Movie</div>
+</a>
+
+<a href="https://www.google.com/search?q=asep+pudin+new&oq=asep+pudin+new&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQIxgnMgYIAhBFGDwyBggDEEUYPDIGCAQQRRhBMgYIBRBFGEEyBggGEEUYQTIGCAcQRRg90gEIMzUyN2owajeoAgCwAgA&sourceid=chrome&ie=UTF-8" class="item">
+<i class="fa-solid fa-user"></i>
+<div>Saya</div>
+</a>
+
+</div>
+
+</body>
+</html>
