@@ -1,6 +1,12 @@
 # ROBOT-V80
 APLIKASI AI ROBOT SYSTEM V.80
 
+
+RIVIEW : https://klinikasura.github.io/ROBOT-V80/
+DOWNLOAD : https://github.com/klinikasura/ROBOT-V80/releases/download/ROBOT-V80/app-releaseMY-ROBOT-V80.apk
+
+
+
 UPDATE OTOMATIS 
 
 UPDATE 2026 PENYEMPURNAAN CODING DAN PROGRAM AI ROBOT SYSTEM V80
